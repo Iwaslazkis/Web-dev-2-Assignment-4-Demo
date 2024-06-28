@@ -1,0 +1,74 @@
+/******w**************
+    
+    Assignment 4 Stylesheet
+    Name: 
+    Date: 
+    Description: 
+
+*********************/
+
+/* Basic CSS resets.
+*  I'd strongly recommend you always set these.
+*/
+:root {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+
+
+
+
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    margin: 16px auto;
+    max-width: 72ch;
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+ h1 {
+    font-weight: 900;
+}
+
+p {
+    margin: 8px 0;
+}
+
+input, button {
+    padding: 4px;
+    margin: 12px 0;
+}
+
+button {
+    width: 64px;
+}
+
+input {
+    width: calc(100% - 72px);
+}
+
+form {
+    margin-bottom: 32px;
+}
+
+ul {
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+div.results > div > h2 {
+    margin-bottom: 8px;
+    font-weight: 800;
+    /* Make the Result titles title case */
+    text-transform: capitalize;
+}
