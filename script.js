@@ -113,9 +113,13 @@ async function formHandler(event) {
       `
     container.innerHTML = container.innerHTML + resultHTML;
   });
-
   // Now that we're done, remove the loading element
   document.querySelector(".results em").remove();
+  
+  // If empty results, then let the user know
+  if (container.innerHTML === "") { 
+    container.innerHTML = "<h3>Sorry, we didn't find any trees with that name!</h3>";
+  }
 };
 
 // Wait for the HTML DOM to load before we attach our

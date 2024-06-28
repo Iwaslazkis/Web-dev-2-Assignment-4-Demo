@@ -72,3 +72,8 @@ div.results > div > h2 {
     /* Make the Result titles title case */
     text-transform: capitalize;
 }
+
+h3 {
+    width: 100%;
+    text-align: center;
+}
